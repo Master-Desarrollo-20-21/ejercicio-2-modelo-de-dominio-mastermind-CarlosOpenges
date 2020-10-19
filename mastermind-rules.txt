@@ -1,0 +1,11 @@
+@startuml
+
+title Mastermind - Rules - Carlos Cusí
+
+[*] --> A : Set secret combination
+A --> B : Propose combination
+B --> C : Evaluate combination
+C --> [*]: IsMastermind (Black == Combination Length || 10 attempts)
+C --> A
+
+@enduml
